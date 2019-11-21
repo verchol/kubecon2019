@@ -63,3 +63,7 @@ steps:
       - cluster: cf-load@codefresh-load
         releaseName: istio
   ```
+  ## Environment view in Codefresh 
+  
+  Kubecon-env-staging(https://g.codefresh.io/environments/)
+  
