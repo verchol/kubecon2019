@@ -36,3 +36,27 @@ spec:
      args: ['run', 'kubecon2019/helm3posthook']
   restartPolicy: Never
 ```
+
+Codefresh Pipeline 
+```
+version: '1.0'
+stages:
+  - stage1
+steps:
+  hello_world_helm3:
+    title: free style step
+    stage: stage1
+    image: verchol/helm:v3
+    commands:
+      - helm version
+    env:
+      name: kubecon-env-staging
+      endpoints:
+      - name: login
+        url: https://g.codefresh.io
+      type: helm-release
+      change: Updated
+      filters:
+      - cluster: cf-load@codefresh-load
+        releaseName: istio
+  ```
