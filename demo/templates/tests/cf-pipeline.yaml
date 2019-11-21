@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "demo.fullname" . }}-codefresh-pipeline"
+  labels:
+{{ include "demo.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": post-upgrade
+    "helm.sh/hook-delete-policy": hook-failed
+     
+spec:
+  containers:
+   - name: cf
+     env:
+       - name: CF_API_KEY
+         value : {{.Values.CF.API_KEY}}
+     image: codefresh/cli
+      #command: ['wget']
+     args: ['run', 'kubecon2019/helm3posthook']
+  restartPolicy: Never
