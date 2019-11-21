@@ -65,5 +65,5 @@ steps:
   ```
   ## Environment view in Codefresh 
   
-  Kubecon-env-staging(https://g.codefresh.io/environments/)
+  [Kubecon-env-staging](https://g.codefresh.io/environments/)
   
