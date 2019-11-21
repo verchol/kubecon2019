@@ -4,8 +4,8 @@ demo of post upgrade helm hook that will update an environment
 
 
 run :
-> helm3 install --set CF.API_KEY=$CF_API_TOKEN demo ./demo
-> helm3 upgrade--set CF.API_KEY=$CF_API_TOKEN  demo ./demo
+helm3 install --set CF.API_KEY=$CF_API_TOKEN demo ./demo
+helm3 upgrade--set CF.API_KEY=$CF_API_TOKEN  demo ./demo
 
 in ./demo/test/
 
