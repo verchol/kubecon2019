@@ -39,8 +39,7 @@ spec:
 
 Codefresh Pipeline 
 
-[Codefresh-inc/kubecon2019/helm3posthook] (https://g.codefresh.io/pipelines/edit/workflow?id=5dd5d49a7ede02556adef526&pipeline=helm3posthook&projects=kubecon2019&projectId=5dd5d4757ede02fe2edef525&rightbar=steps)
-
+[Codefresh-inc/kubecon2019/helm3posthook] (https://g.codefresh.io/pipelines/edit/workflow?id=5dd5d49a7ede02556adef526/)
 
 ```
 version: '1.0'
